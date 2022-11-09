@@ -1,0 +1,25 @@
+.mail {
+  .break {
+    word-wrap: break-word;
+  }
+  .none {
+    display: none !important;
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.mail:hover {
+  box-shadow: 1px 2px 2px rgb(195, 194, 194);
+  .none {
+    display: inherit !important;
+  }
+  .none2 {
+    pointer-events: none !important;
+    cursor: pointer !important;
+  }
+  .no {
+    display: none;
+  }
+}

@@ -1,0 +1,50 @@
+<div
+  class="body w-100 d-flex justify-content-center align-items-center pt-0"
+  style="height: 100vh"
+>
+  <div class="card mt-5 rounded mx-auto p-5 row set" style="height: 70vh">
+    <div class="side-1 pr-4">
+      <img src="../../../assets/images/vector2.svg" alt="" />
+      <h1 class="head mt-3"><span>Verify your phone Number</span></h1>
+
+      <p>
+        For your security, Google wants to make sure it’s really you. Google
+        will send a text message with a 6-digit verification code.
+      </p>
+      <div class="wid">
+        <select class="mr-3">
+          <option value="nigeria">Nig</option>
+          <option value="nigeria">Nig</option>
+          <option value="nigeria">Nig</option>
+          <option value="nigeria">Nig</option>
+        </select>
+        <i class="fa fa-caret-down mr-3"></i>
+        <input
+          type="number"
+          placeholder="input number"
+          class="form mt-5"
+          [(ngModel)]="number"
+        />
+        <small class="text-danger ml-5" *ngIf="touch">
+          please enter a valid phone number</small
+        >
+      </div>
+      <div class="flex">
+        <strong routerLink="/" style="cursor: pointer">Back</strong>
+        <button class="btn btn-primary" (click)="next()">Next</button>
+      </div>
+    </div>
+    <div
+      class="side2 d-flex flex-column mt-5 sign-up-image"
+      style="height: 80vh; width: fit-content"
+    >
+      <img
+        src="../../../assets/images/phone-number.svg"
+        alt=""
+        height="266px"
+        width="244px"
+      />
+      <p class="text-center">Your personal info is private & safe</p>
+    </div>
+  </div>
+</div>

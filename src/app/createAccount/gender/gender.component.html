@@ -1,0 +1,109 @@
+<div
+  class="main w-100 d-flex justify-content-center align-items-center pt-0"
+  style="height: 100vh"
+>
+  <div class="body card mx-auto row p-5" style="height: 120vh">
+    <div class="side1">
+      <img src="../../../assets/images/vector2.svg" alt="" />
+      <h5 class="head mt-4">{{ name }}, welcome to Google</h5>
+      <p class="mb-5"><i class="fa fa-user-circle-o mr-3"></i>{{ email }}</p>
+      <select class="mr-3 select">
+        <option value="nigeria">Nig</option>
+        <option value="nigeria">Nig</option>
+        <option value="nigeria">Nig</option>
+        <option value="nigeria">Nig</option>
+      </select>
+      <i class="fa fa-caret-down mr-3"></i>
+      <input type="text" class="p-4" class="phone" />
+      <p>
+        Google will use this number only for account security . Your number
+        won't be visible to others. You can choose later whether touse it for
+        other purposes
+      </p>
+
+      <div>
+        <input
+          type="text"
+          placeholder="Recovery email address (optional)"
+          class="phone2"
+        />
+        <br />
+        <small>we'll use it to keep your account secure</small> <br />
+        <div class="birth mt-3">
+          <select class="put mr-3" [(ngModel)]="myMonth">
+            <option value="" selected>Month</option>
+            <option value="January">January</option>
+            <option value="Feburary">Feburary</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="Octomber">Octomber</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <input
+            type="number"
+            placeholder="Day"
+            class="put mr-3"
+            min="1"
+            max="31"
+            [(ngModel)]="day"
+          />
+          <input
+            type="number"
+            placeholder="Year"
+            class="put"
+            min="1000"
+            max="2022"
+            [(ngModel)]="year"
+          />
+          <br />
+          <small class="text-danger" *ngIf="input"> input date</small>
+
+          <small *ngIf="input2">Your birthday</small>
+          <br />
+          <br />
+        </div>
+        <select name="" id="" class="phone2 mb-3" [(ngModel)]="gender">
+          <option value="" selected>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+          <option value="custom">Custom</option>
+        </select>
+        <small class="text-danger d-block" *ngIf="sGender">Select Gender</small>
+        <br />
+
+        <strong>Why we ask for this information</strong>
+
+        <div class="flex mt-5">
+          <strong routerLink="/verify/{{ index }}" style="cursor: pointer"
+            >Back</strong
+          >
+          <button
+            class="btn btn-primary"
+            style="cursor: pointer"
+            (click)="next()"
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="side2 d-flex flex-column mt-5 sign-up-image"
+      style="height: 80vh; width: fit-content"
+    >
+      <img
+        src="../../../assets/images/phone-number.svg"
+        alt=""
+        height="244px"
+        width="244px"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="compose">
+  <div class="comp ml-2" style="cursor: pointer" (click)="compose()">
+    <i class="fa fa-pencil mr-2" style="font-size: 18px"></i> compose
+  </div>
+
+  <div
+    routerLink="/gmail/{{ index }}/mail"
+    queryParamsHandling="preserve"
+    class="main d-flex"
+  >
+    <div class="d-flex">
+      <p><i class="fa fa-inbox ml-3"></i></p>
+
+      <p class="box">inbox</p>
+    </div>
+    <div class="" style="height: 20px; width: 20px">{{ mail }}</div>
+  </div>
+  <div
+    routerLink="{{ index }}/starred"
+    queryParamsHandling="preserve"
+    class="main d-flex"
+  >
+    <div class="d-flex">
+      <p><i class="fa fa-star-o ml-3"></i></p>
+
+      <p class="box">starred</p>
+    </div>
+
+    <div class="" style="height: 20px; width: 20px">{{ star }}</div>
+  </div>
+  <div
+    routerLink="{{ index }}/snoozed"
+    queryParamsHandling="preserve"
+    class="main d-flex"
+  >
+    <p><i class="fa fa-clock-o ml-3"></i></p>
+
+    <p class="box">snoozed</p>
+  </div>
+  <div
+    routerLink="{{ index }}/sent"
+    queryParamsHandling="preserve"
+    class="main d-flex"
+  >
+    <div class="d-flex">
+      <p><i class="fa fa-paper-plane-o ml-3"></i></p>
+
+      <p class="box">sent</p>
+    </div>
+
+    <div class="" style="height: 20px; width: 20px">{{ sent }}</div>
+  </div>
+  <div
+    routerLink="{{ index }}/draft"
+    queryParamsHandling="preserve"
+    class="main d-flex"
+  >
+    <p><i class="fa fa-file ml-3"></i></p>
+
+    <p class="box">Drafts</p>
+  </div>
+</div>

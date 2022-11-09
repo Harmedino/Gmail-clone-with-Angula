@@ -1,0 +1,130 @@
+.set {
+  width: 60%;
+  height: 83vh;
+}
+
+.head {
+  color: #202124;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.side1 {
+  width: 70%;
+  min-height: 350px;
+
+  form {
+    margin-top: 20px;
+
+    .input {
+      margin-top: 20px;
+      width: 90%;
+      height: 37px;
+      border: 1px solid rgb(125, 117, 117);
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        outline: none;
+        border: none;
+        max-width: 40%;
+      }
+      span {
+        // margin-left: 80px;
+        text-align: end !important;
+      }
+    }
+    .create {
+      font-weight: 700;
+      color: blue;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+  input {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(107, 106, 106);
+  }
+  .link {
+    margin-right: 150px;
+    color: blue;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1275px) {
+  .set {
+    width: 70%;
+    height: 70vh;
+    .input {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .set {
+    width: 80%;
+    height: 70vh;
+  }
+}
+@media (max-width: 1000px) {
+  .set {
+    width: 90%;
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .set {
+    width: 60%;
+  }
+  .side1 {
+    width: 100% !important;
+  }
+  .sign-up-image {
+    display: none !important;
+  }
+}
+@media (max-width: 850px) {
+  .set {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .set {
+    width: 70%;
+  }
+}
+@media (max-width: 750px) {
+  .set {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  .set {
+    width: 80%;
+  }
+}
+@media (max-width: 655px) {
+  .set {
+    width: 80%;
+    border: 1px solid black;
+    padding-top: 20px !important;
+  }
+  .card {
+    border: none !important;
+  }
+  .align-items-center {
+    align-items: flex-start !important;
+  }
+  .justify-content-center {
+    justify-content: flex-start !important;
+  }
+  .put {
+    width: 90% !important;
+    margin-bottom: 20px;
+  }
+  .p-5 {
+    padding: 10px !important;
+  }
+}

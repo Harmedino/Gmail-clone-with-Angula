@@ -1,0 +1,40 @@
+<div class="card mx-auto pt-5 center" style="height: 80vh">
+  <div
+    style="
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 50vh;
+    "
+  >
+    <img src="../../../assets/images/vector2.svg" alt="" />
+
+    <h3 class="mt-3 head mb-5">Choose an account</h3>
+    <div class="sect w-100">
+      <div
+        *ngFor="let item of list; let i = index"
+        routerLink="/password/{{ i }}"
+        class="firm p-5 d-flex mt-1"
+        style="align-items: center; height: 30px"
+      >
+        <div class="cir mr-4">{{ item.firstName[0] | uppercase }}</div>
+        <div>
+          <h6 class="mt-3">{{ item.firstName }} {{ item.lastName }}</h6>
+          <p>{{ item.userName }}</p>
+        </div>
+        <hr />
+      </div>
+      <div
+        class="firm pl-5 pr-5 d-flex mt-1"
+        style="align-items: center; height: 30px"
+      >
+        <strong routerLink="/another"
+          ><i class="fa fa-user-o mr-4 ml-2"></i> Use another account</strong
+        >
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>

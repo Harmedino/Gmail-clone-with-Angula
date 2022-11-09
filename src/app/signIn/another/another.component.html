@@ -1,0 +1,19 @@
+<div class="card mx-auto mt-5 p-5 center" style="height: 80vh">
+  <img src="../../../assets/images/vector2.svg" alt="" />
+
+  <h3 class="mt-3 head">Sign in</h3>
+  <p class="mt-3 head2 head">Use your Google Account</p>
+
+  <input type="text" [(ngModel)]="email" />
+  <strong> Forgot email?</strong>
+
+  <p>Not your computer? Use Guest mode to sign in privately.</p>
+  <strong>Learn more</strong>
+
+  <div class="d-flex mt-5" style="justify-content: space-between">
+    <strong routerLink="/"> Create account</strong>
+    <button class="btn btn-primary" (click)="check()" [disabled]="email == ''">
+      Next <i class="fa fa-spin fa-spinner" *ngIf="select"></i>
+    </button>
+  </div>
+</div>

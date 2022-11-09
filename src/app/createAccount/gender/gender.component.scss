@@ -1,0 +1,138 @@
+.body {
+  width: 60%;
+  .side1 {
+    width: 60%;
+    padding: 10px;
+    .head {
+      color: #202124;
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    strong {
+      color: blue;
+    }
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 80px;
+    }
+    .select {
+      border: none;
+      -webkit-appearance: none;
+    }
+    .phone {
+      width: 70% !important;
+      padding: 5px;
+      outline: blue;
+    }
+    .phone2 {
+      width: 90% !important;
+      padding: 5px;
+      outline: blue;
+    }
+    p {
+      color: #5f6368;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      width: 90%;
+    }
+    .birth {
+      width: 90%;
+    }
+    .put {
+      width: 30%;
+    }
+  }
+}
+@media (max-width: 1275px) {
+  .body {
+    width: 70%;
+    height: 70vh;
+    .input {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .body {
+    width: 80%;
+    height: 70vh;
+  }
+}
+@media (max-width: 1000px) {
+  .body {
+    width: 90%;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .body {
+    width: 60%;
+    .side1 {
+      width: 100%;
+    }
+  }
+  .sign-up-image {
+    display: none !important;
+  }
+}
+
+@media (max-width: 850px) {
+  .body {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .body {
+    width: 70%;
+  }
+}
+@media (max-width: 750px) {
+  .body {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  .body {
+    width: 80%;
+  }
+}
+@media (max-width: 655px) {
+  .body {
+    width: 80%;
+    border: 1px solid black;
+    padding-top: 20px !important;
+  }
+  .card {
+    border: none !important;
+  }
+  .align-items-center {
+    align-items: flex-start !important;
+  }
+  .justify-content-center {
+    justify-content: flex-start !important;
+  }
+  .p-5 {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 600px) {
+  .body {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .body {
+    width: 100%;
+    .birth {
+      width: 100% !important;
+    }
+  }
+}

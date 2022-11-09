@@ -1,0 +1,30 @@
+<div class="header"></div>
+<div class="body mx-auto">
+  <div class="head d-flex justify-content-between align-items-center pl-3 pr-4">
+    <h3>{{ message.subject }}</h3>
+
+    <div>
+      <i class="fa fa-print"></i>
+      <i class="fa fa-window"></i>
+    </div>
+  </div>
+
+  <div
+    class="sub-head mt-4 d-flex justify-content-between align-items-center w-100"
+  >
+    <div class="d-flex align-items-center">
+      <p class="profile mr-2"><i class="fa fa-user-o"></i></p>
+
+      <strong>{{ message.From }}</strong>
+      <small class="ml-2">{{ message.mail }}</small>
+    </div>
+
+    <div class="date">
+      {{ message.date | date: "longDate" }}
+    </div>
+  </div>
+  <hr />
+  <div class="text-center">
+    {{ message.body }}
+  </div>
+</div>

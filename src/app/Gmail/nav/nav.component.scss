@@ -1,0 +1,32 @@
+.compose {
+  .comp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    border-radius: 10px;
+    height: 60px;
+    background-color: #c2e7ff;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+  }
+  .main {
+    cursor: pointer;
+    margin-bottom: -10px;
+    align-items: center !important;
+    // justify-content: center !important;
+    display: flex !important;
+    font-size: 16px;
+    font-weight: 500;
+    i {
+      margin-right: -35px;
+    }
+  }
+  .box {
+    margin-left: 3rem;
+  }
+}
+.bold {
+  font-weight: 700;
+}

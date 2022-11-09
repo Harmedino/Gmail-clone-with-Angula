@@ -1,0 +1,103 @@
+<div class="body">
+  <div class="header">
+    <div class="logo ml-2">
+      <i class="fa fa-bars"></i>
+      <img
+        src="../../../assets/images/logo_gmail_lockup_default_1x_r5.png"
+        alt=""
+      />
+    </div>
+    <div class="search">
+      <div class="input rounded">
+        <i class="fa fa-search mr-3 ml-2" style="font-size: 23px"></i>
+        <input type="search" placeholder="Search in mail" />
+      </div>
+    </div>
+    <div class="d-flex" style="align-items: center">
+      <div class="svg" (click)="show()">
+        <i class="fa fa-question-circle-o"></i>
+      </div>
+      <div class="svg">
+        <i class="fa fa-cog"></i>
+      </div>
+      <div class="svg">
+        <svg class="gb_Ue" focusable="false" viewBox="0 0 24 24">
+          <path
+            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="fName"
+        [ngStyle]="{ backgroundColor: hexcolor }"
+        (click)="show2()"
+      >
+        {{ name[0] | uppercase }}
+      </div>
+    </div>
+  </div>
+  <div class="sides d-flex w-100 justify-content-between">
+    <div class="leftSide pt-3 ">
+      <app-nav></app-nav>
+    </div>
+    <div class="mid-side mt-2">
+      <div class="top">
+        <app-top></app-top>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<div class="question shadow pt-3" *ngIf="click">
+  <p>Help</p>
+  <p>Training</p>
+  <p>Updates</p>
+  <hr />
+  <p>Sendfeedback to Google</p>
+</div>
+
+<div class="gmail shadow" *ngIf="expression">
+  <div>
+    <div class="log"></div>
+  </div>
+</div>
+
+<div class="profile shadow gmail" *ngIf="click2">
+  <div class="pic text-light" [ngStyle]="{ background: hexcolor }">
+    {{ name[0] | uppercase }}
+    <div class="img">
+      <img src="" alt="" />
+    </div>
+    <p><i class="fa fa-camera"></i></p>
+  </div>
+  <p>{{ name }}</p>
+  <p>{{ username }}</p>
+  <p class="round">Manage your google accont</p>
+  <hr />
+  <a href="/choose" target="_blank"
+    ><i class="fa fa-user mr-2"></i> Add another account</a
+  >
+  <hr />
+  <p class="round2" (click)="out()">Sign out</p>
+  <hr />
+</div>
+<div
+  class="compose shadow rounded pb-4"
+  *ngIf="compose1"
+  [ngStyle]="{ width: widthr, height: height }"
+>
+  <div
+    class="head w-100 d-flex align-item-center justify-content-between pt-1 pl-3 pr-3"
+  >
+    <p><strong>New Message</strong></p>
+    <div class="icon d-flex align-item-center justify-content-around pt-1">
+      <i class="fa fa-minus" (click)="mini()"></i>
+      <i class="fa fa-expand" (click)="expand()"></i>
+      <i class="fa fa-times" (click)="close()"></i>
+    </div>
+  </div>
+  <app-compose></app-compose>
+</div>
+
+<div class="phone w-100 border"></div>
