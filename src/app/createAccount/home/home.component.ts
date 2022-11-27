@@ -99,7 +99,7 @@ export class HomeComponent implements OnInit {
             sent: [],
           };
           this.service.details.push(this.data);
-          this.service.auth == true;
+          // this.service.auth == true;
           localStorage.setItem('myarray', JSON.stringify(this.service.details));
           setTimeout(() => {
             this.select = false;
@@ -120,7 +120,7 @@ export class HomeComponent implements OnInit {
         sent: [],
       };
       this.service.details.push(this.data);
-      this.service.auth == true;
+      // this.service.auth == true;
       localStorage.setItem('myarray', JSON.stringify(this.service.details));
       setTimeout(() => {
         this.select = false;

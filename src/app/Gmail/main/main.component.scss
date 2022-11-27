@@ -12,9 +12,14 @@
   }
 }
 .mail {
-  .break {
-    word-wrap: break-word;
+  .cut {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
+  // .break {
+  //   word-wrap: break-word;
+  // }
   .none {
     display: none !important;
     width: 14%;

@@ -15,6 +15,7 @@ export class InboxComponent implements OnInit {
   expression = '';
   index: any = '';
   name: any = '';
+  auth:any= ''
   username: any = '';
   compose1: any = false;
   widthr: any = '450px';
@@ -48,7 +49,7 @@ export class InboxComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    this.service.auth = false;
+    localStorage.setItem('guard' , JSON.stringify(this.auth = false))
     this.routee.navigate(['/choose']);
   }
 
@@ -59,7 +60,7 @@ export class InboxComponent implements OnInit {
     this.click2 = true ? this.click2 == false : this.click2 == true;
   }
   out() {
-    this.service.auth = false;
+    localStorage.setItem('guard', JSON.stringify(this.auth = false));
     this.routee.navigate(['/choose']);
   }
   expand() {

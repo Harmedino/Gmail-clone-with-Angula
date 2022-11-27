@@ -12,6 +12,6 @@ export class DetailserviceService {
     }
   }
   details: any = [];
-  auth = true;
+  
   get: any = localStorage.getItem('myarray');
 }

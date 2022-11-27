@@ -13,7 +13,7 @@
   </div>
 </div>
 <div
-  class="mail w-100 d-flex align-item-center justify-content-between pb-2 mb-1"
+  class="mail w-100 d-flex align-item-center justify-content-start pb-2 mb-1"
   style="
     height: 30px;
     background-color: #ffffff;
@@ -21,7 +21,7 @@
   "
   *ngFor="let mail of mail; let i = index"
 >
-  <div class="pl-3">
+  <div class="pl-3 mr-4">
     <input type="checkbox" name="" id="" />
     <i
       class="{{
@@ -31,13 +31,13 @@
     ></i>
   </div>
   <div
-    class="d-flex align-item-center justify-content-between w-75"
+    class="d-flex align-item-center justify-content-start w-75 cut"
     routerLink="{{ index }}/message/{{ i }}"
   >
     <p>{{ mail.From }}</p>
-    <p>{{ mail.subject | slice: 0:20 }}</p>
-    <p class="break">{{ mail.body | slice: 0:20 }}</p>
-    <p class="pr-2 no">{{ mail.date | date: "longDate" }}</p>
+    <p class="ml-5 mr-3">{{ mail.subject | slice: 0:30 }}-</p>
+    <p class="break mr-3">{{ mail.body | slice: 0:55 }}</p>
+    <p class="pr-2 no">{{ mail.date | date: "shortDate" }}</p>
   </div>
   <div class="none">
     <i class="fa fa-archive" (click)="archive(i)"></i>

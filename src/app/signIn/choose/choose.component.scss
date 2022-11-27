@@ -12,7 +12,7 @@
   }
   .head {
     color: #202124;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -31,13 +31,18 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 14px;
+    }
+    .name {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+      margin-top: -5px;
+      font-weight: 500;
     }
     .firm:hover {
       background-color: rgb(128, 128, 244);
-    }
-    .firm {
-      min-height: 20px;
-      // padding: 20px;
     }
   }
 }
@@ -65,5 +70,22 @@
 @media (max-width: 600px) {
   .center {
     width: 90% !important ;
+  }
+}
+@media (max-width: 513px) {
+  .card {
+    border: none !important;
+  }
+  .center {
+    margin-top: 20px !important;
+    width: 100% !important;
+  }
+  .body {
+    width: 95% !important;
+  }
+}
+@media (max-width: 320px) {
+  .body {
+    width: 100% !important;
   }
 }

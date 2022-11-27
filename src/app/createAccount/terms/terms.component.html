@@ -1,9 +1,11 @@
-<div class="card w-50 p-5 mt-4 mx-auto" style="min-height: 80vh">
-  <div class="side1 w-75">
+<div class="body mx-auto mt-5 pt-0 set  " style="min-height: 80vh; width: 55%">
+  <div class="card rounded p-5 d-flex flex-row justify-content-between">
+
+     <div class="side-1 w-50 ">
     <img
       src="../../../assets/images/vector2.svg"
       alt=""
-      style="width: 15%; height: 20px"
+      style="width: 25%; height: 25px"
     />
     <h5 class="head mt-3">Privacy and Terms</h5>
 
@@ -90,10 +92,26 @@
     <strong>More option <i class="fa fa-caret-down"></i></strong>
 
     <div class="flex mt-5">
-      <strong routerLink="/gender/" style="cursor: pointer">Cancel</strong>
+      <strong  routerLink="/gender/{{ index }}" style="cursor: pointer">Cancel</strong>
       <button class="btn btn-primary" style="cursor: pointer" (click)="agree()">
         i agree
       </button>
     </div>
+  </div>
+  <div
+      class="side2 d-flex flex-column mt-5 sign-up-image  "
+      style="height: 80vh; width: fit-content"
+    >
+      <img
+        src="../../../assets/images/vector.svg"
+        alt=""
+        height="244px"
+        width="244px"
+      />
+      <p class="text-center">
+        You’re in control of the data we <br> collect and how it’s used
+      </p>
+    </div>
+
   </div>
 </div>

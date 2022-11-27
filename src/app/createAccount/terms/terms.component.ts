@@ -9,11 +9,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class TermsComponent implements OnInit {
   constructor(private routr: Router, private router: ActivatedRoute) {}
   index: any = '';
+  auth:any= ''
   ngOnInit(): void {
     this.index = this.router.snapshot.paramMap.get('index');
   }
 
   agree() {
-    this.routr.navigate([`/gmail/${this.index}`]);
+    this.routr.navigate([`/gmail/${this.index}/mail`]);
+    localStorage.setItem('guard1', JSON.stringify(this.auth = true));
   }
 }

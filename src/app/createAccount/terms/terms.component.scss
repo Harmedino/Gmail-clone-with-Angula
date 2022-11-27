@@ -1,9 +1,7 @@
-.head {
+.body {
   color: #202124;
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 40px;
-  font-family: Arial, Helvetica, sans-serif;
+
+
 }
 strong {
   color: blue;
@@ -14,3 +12,84 @@ strong {
   justify-content: space-between;
   margin-top: 80px;
 }
+
+
+@media (max-width: 1275px) {
+  .set {
+    width: 70%;
+  }
+}
+@media (max-width: 1100px) {
+  .set {
+    width: 80%;
+  }
+}
+@media (max-width: 1000px) {
+  .set {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .set {
+    width: 60%;
+  }
+  .side-1 {
+    width: 100% !important;
+  }
+  .sign-up-image {
+    display: none !important;
+  }
+  input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .set {
+    width: 65%;
+  }
+}
+@media (max-width: 800px) {
+  .set {
+    width: 70%;
+  }
+}
+@media (max-width: 750px) {
+  .set {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  .set {
+    width: 80%;
+  }
+}
+@media (max-width: 655px) {
+  .set {
+    width: 80%;
+    padding-top: 10px !important;
+    .card {
+      border: none !important;
+    }
+    .align-items-center {
+      align-items: flex-start !important;
+    }
+    .justify-content-center {
+      justify-content: flex-start !important;
+    }
+    img{
+      width: 25%;
+      height: 30px;
+    }
+  }
+
+  .p-5 {
+    padding: 0px !important;
+  }
+  p {
+    line-height: 26px;
+  }
+
+}
+

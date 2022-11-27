@@ -23,12 +23,15 @@ export class AhmedGuard implements CanActivate {
     | Promise<boolean | UrlTree>
     | boolean
     | UrlTree {
-    if (this.service.auth == true) {
+
+    let check =  localStorage.getItem('guard')
+
+    if (check == 'true') {
       return true;
     } else {
       alert('bro no cheating plz login');
       this.route.navigate(['/']);
     }
-    return true ? this.service.auth : false;
+    return  false;
   }
 }

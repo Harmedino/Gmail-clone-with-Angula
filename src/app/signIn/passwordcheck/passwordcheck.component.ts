@@ -16,6 +16,7 @@ export class PasswordcheckComponent implements OnInit {
   mailarrY: any = [];
   select = false;
   error = false;
+  auth:any = ''
   constructor(
     private routee: ActivatedRoute,
     private route: Router,
@@ -44,7 +45,7 @@ export class PasswordcheckComponent implements OnInit {
     if (this.pass == this.mailarrY[this.index].password) {
       this.error = false;
       this.select = true;
-      this.service.auth = true;
+      localStorage.setItem('myarray', JSON.stringify(this.auth = true))
 
       setTimeout(() => {
         this.select = false;
